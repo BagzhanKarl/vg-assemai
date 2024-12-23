@@ -8,10 +8,6 @@ env = os.getenv('FLASK_ENV', 'development')
 # Создаем приложение
 app = create_app(env)
 
-@app.route('/')
-def index():
-    start_scheduler()
-    return "Запушено"
 
 
 if __name__ == "__main__":
