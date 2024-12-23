@@ -17,6 +17,7 @@ def create_app(env='development'):
     db.init_app(app)
     migrate.init_app(app, db)
 
+
     # Регистрация роутеров
     from app.routers import register_routers
     register_routers(app)

@@ -1,0 +1,1 @@
+from .whapi import AssemMessage

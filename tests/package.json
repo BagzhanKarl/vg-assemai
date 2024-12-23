@@ -1,0 +1,64 @@
+{
+  "messages": [
+    {
+      "id": "Ol8kGkk1iPRFig-gB0SGu1bag",
+      "from_me": false,
+      "type": "text",
+      "chat_id": "77761174378@s.whatsapp.net",
+      "timestamp": 1734735099,
+      "source": "mobile",
+      "text": {
+        "body": "Тест"
+      },
+      "from": "77761174378",
+      "from_name": "Баха"
+    }
+  ],
+  "channel_id": "CYBORG-JDZX7"
+}
+{
+  "messages": [
+    {
+      "id": "On5hOVkDS5E4Zw-gE4SGu1bag",
+      "from_me": false,
+      "type": "voice",
+      "chat_id": "77761174378@s.whatsapp.net",
+      "timestamp": 1734739316,
+      "source": "mobile",
+      "voice": {
+        "id": "oga-3a7e613959034b913867-804e121aed5b6a",
+        "mime_type": "audio/ogg; codecs=opus",
+        "file_size": 3065,
+        "sha256": "l+VgxRtssDQB+deJdO9O+48rJrdPl4FO/HXOV3MgtB8=",
+        "seconds": 1
+      },
+      "from": "77761174378",
+      "from_name": "Баха"
+    }
+  ],
+  "channel_id": "CYBORG-JDZX7"
+}
+{
+  "messages": [
+    {
+      "id": "Og90Lt0mcELZSA-gOcSGu1bag",
+      "from_me": false,
+      "type": "image",
+      "chat_id": "77761174378@s.whatsapp.net",
+      "timestamp": 1734739359,
+      "source": "mobile",
+      "image": {
+        "id": "jpeg-3a0f742edd267042d948-80e7121aed5b6a",
+        "mime_type": "image/jpeg",
+        "file_size": 34971,
+        "sha256": "qlx5T5nyjsWx3tDDwKkvclWTed3I1oTPThOKBdW95L4=",
+        "width": 736,
+        "height": 552,
+        "preview": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDABsSFBcUERsXFhceHBsgKEIrKCUlKFE6PTBCYFVlZF9VXVtqeJmBanGQc1tdhbWGkJ6jq62rZ4C8ybqmx5moq6T/2wBDARweHigjKE4rK06kbl1upKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKT/wgARCABIAEgDASIAAhEBAxEB/8QAGQAAAwEBAQAAAAAAAAAAAAAAAAMEAQIF/8QAGAEBAQEBAQAAAAAAAAAAAAAAAAIBAwT/2gAMAwEAAhADEAAAAPex3IvGgrKNJsp5EFARYtea1cNGVaebVs3eZaiuCBpvK5VKOfu8BpnDtXWh/Xk+hFFx0clYTU7OxcegqKR0/u550Nzo5CXAAAwAwAAD/8QAHhEBAAICAQUAAAAAAAAAAAAAAQIRABADEyAhMDH/2gAIAQIBAT8A7lrRqTWPLG8ikisCjxpLzpRwiHz0f//EAB8RAAICAQQDAAAAAAAAAAAAAAABAhESAxATISAwMf/aAAgBAwEBPwDyUbKNVSvoxmR7FB0SVMeydHJIyb++j//EACwQAAIBAwIFAwMFAQAAAAAAAAECAAMREgQhBRMxUVIVMmEiQUIQFDAzQ3H/2gAIAQEAAT8A/hZdvpAvMW7CYv4rArX3UWgXfcCYr2EKr2m1/bMV7Srr+XVZQo6z1FgbWWVeLcpbkA9gPvF4y9xzKJpg9CZ6keywa4u17C4+YuoZ6TnoQLz93qPMw63UD/QytRBqscR1hoA/jFTLimNhZFuB8zXK9WgQcel5oFWtplJFyNjBSRASRbaaRQ9J8epFoeHVuyz02t2WVFOZhFjaaqtyOL5XuG2M4jqqdKnYMSxGwnDaPL06sPyF43tNxeaI/QxtbaUmyQHIN8j9H6mOyX6iarRo+qNYNf4lXTpWtnvaacBNIoU+0wsGXY9ZokIRlbeIi01xQWEzA7xqWV9+s9PFiM9zDwsW98bhYC/2W+ZR4cFQjO4PSLw8A7vKdHlg79YiYKADf/ssfiZpf3Tmp5CcxPKVxTrUymdr/eUSlKmEzvb7zmp5Cc1PITmp5Cc1PITGYzGYzGYzGYzGf//+AAMA/9k="
+      },
+      "from": "77761174378",
+      "from_name": "Баха"
+    }
+  ],
+  "channel_id": "CYBORG-JDZX7"
+}

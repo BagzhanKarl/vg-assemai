@@ -9,7 +9,7 @@ class SemanticBot:
         self.document_sections = []
         self.embeddings = None
 
-    def semantic_search(self, query, top_k=3):
+    def semantic_search(self, query, top_k=2):
         query_embedding = self.model.encode(query, convert_to_tensor=True)
         cos_scores = torch.nn.functional.cosine_similarity(query_embedding, self.embeddings)
         top_results = torch.topk(cos_scores, k=min(top_k, len(self.document_sections)))
@@ -37,22 +37,15 @@ class SemanticBot:
         self.embeddings = data['embeddings']
 
 
-def create_semantic_response(query, model_path='semantic_model.pkl'):
+def create_semantic_response(query, model_path='app/utils/semantic_model.pkl'):
     bot = SemanticBot()
     bot.load_model(model_path)
     context = bot.generate_response(query)
 
-    prompt = f"""Используя следующий контекст о бережливом производстве, 
-    дай краткий и понятный ответ на вопрос.
+    prompt = f"""ТОП-2 ответа который мог бы подойти к вашему вопросу. \n\n
 
-    Контекст: {context}
+    {context}
 
-    Вопрос: {query}
-
-    Ответ должен быть:
-    1. Конкретным и по существу
-    2. Основанным только на предоставленном контексте
-    3. Понятным для человека, не знакомого с темой
     """
 
     return prompt

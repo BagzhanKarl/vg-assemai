@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block main_container %}
+    <div class="col-md-12 col-sm-6" id="instructions">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="h3">Системное сообщение</div>
+            <button class="btn btn-primary" id="openModalButton">Создать</button>
+        </div><hr>
+        {% for item in system %}
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    {{ item.content }}
+                    <textarea name="" hidden="" id="ins{{ item.id }}" cols="30" rows="10">{{ item.content }}</textarea>
+                </div>
+                <div class="card-footer d-flex justify-content-between">
+                    <a href="/admin/system/delete/{{ item.id }}" class="btn btn-danger">Удалить</a>
+                    <button class="btn btn-info" onclick="editDate({{ item.id }})">Изменить</button>
+                </div>
+            </div>
+        {% endfor  %}
+    </div>
+
+
+    <div class="pop" id="pop">
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <form method="post" action="/admin/system/create" class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Системное сообщение</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input hidden type="text" name="id" id="idelem" class="form-control">
+                        <textarea name="content" id="text" rows="10" placeholder="Введите сообщение" class="form-control"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                        <button class="btn btn-primary">Сохранить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js_scripts %}
+    <script>
+        function editDate(id){
+            $('#text').val('');
+            let text = $('#ins' + id).val();
+            $('#text').val(text);
+            $('#idelem').val(id);
+
+
+            var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+            myModal.show();
+        }
+        $('#openModalButton').click(function() {
+            $('#text').val('');
+            $('#idelem').val('');
+            var myModal = new bootstrap.Modal(document.getElementById('staticBackdrop'));
+            myModal.show();
+        });
+    </script>
+{% endblock %}
